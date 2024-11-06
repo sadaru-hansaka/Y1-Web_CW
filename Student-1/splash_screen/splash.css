@@ -1,0 +1,88 @@
+body::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: url(images/background-splash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    inset: 0;
+    opacity: 1.0;
+}
+
+body{
+    text-align: center;
+    color: lightblue;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    color: lightblue;
+    /* background-color: #0A2647; */
+    text-align: center;
+    align-self: center;
+    font-size: 50px;
+    margin: 40px 20px 3px 20px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 20px 3px 20px;
+}
+
+#teammembers{
+    margin: auto 0;
+    justify-content: center;
+}
+
+.team{
+    display: inline-block;
+    margin: 80px 5px 0px 0px;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+}
+
+.description{
+    padding-left: 30px;
+    text-align: center;
+    color: lightblue;
+    font-weight: bold;
+}
+
+#missionandvision{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:0px 30px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#mission, #vision{
+    margin-top: 10px;
+    background-color: #0A2647;
+    width : 320px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+#loarder_image{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px 0px 0px 0px;
+}
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="payment_gateway.css">
+</head>
+    <body>
+    <div class="header"> 
+        <h1>Payment Gateway</h1>
+    </div>
+        <div class="forms">
+            <!-- payment details form -->
+            <form class="form" id="paymentform">
+
+                <fieldset class="fieldset">
+                    <legend class="legend">Payment Details</legend>
+                    
+                    <span>* Card Type: </span>
+                    <br><br>
+                    <input type="radio" id="visa" name="visa" value="Visa" required><img src="images/visa.png" alt ="Visa" class="card">
+                    <input type="radio" id="master" name="master" value="MasterCard" required><img src="images/master.png" alt ="MasterCard" class="card">
+                    <input type="radio" id="amex" name="amex" value="American Express" required><img src="images/amex.png" alt ="American Express" class="card">
+                    <br><br>
+                    <label for = "cardNumber">* Card Number: </label><br>
+                    <input type="text" id="cardNumber" name="cardNumber" size="30" placeholder="1111-2222-3333-4444" required>
+                    <br><br>
+                    <label for = "personName">* Cardholder Name: </label><br>
+                    <input type="text" id="personName" name="personName" size="30" placeholder="Harry potter" required>
+                    <br><br>
+                    <label for = "expMonth">* Expaire Month: </label>
+                    <select name="expMonth" id="expMonth" size="1" required>
+                        <option value="">Select an option</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <br><br>
+                    <label for = "expYear">* Expaire Year: </label>
+                    <input type="text" id="expYear" name="expYear" size="5" placeholder="YYYY" maxlength="4" required>
+                    <br><br>
+                    <label for = "cvv">* CVV: </label><br>
+                    <input type="text" id="cvv" name="cvv" size="10" placeholder="123" required>
+                    <br><br>
+
+                    <div class="btns">
+                        <input type="reset" value="Clear fields" class="btn">
+                    </div>
+            
+                </fieldset><br>
+
+            </form>
+
+            <!-- address details form -->
+            <form class="form"  id="addressform">
+
+                <fieldset class="fieldset">
+                    <legend class="legend">Billing Address Details</legend>
+
+                    <br>
+                    <label for="adressLine1">* Adress Line 1:</label><br>
+                    <input type="text" id="adressLine1" name="adressLine1" size="30" placeholder="1234 Main St" required>
+                    <br><br>
+                    <label for = "adressLine2">* Adress Line 2: </label><br>
+                    <input type="text" id="adressLine2" name="addressLine2" size="30" placeholder="Apartment, studio, or floor" required>
+                    <br><br>
+                    <label for = "adressLine3">Adress Line 3: </label><br>
+                    <input type="text" id="adressLine3" name="addressLine3" size="30" placeholder="district" required>
+                    <br><br>
+                    <label for = "postCode">* Postcode / Zip code: </label><br>
+                    <input type="text" id="postCode" name="postCode" size="30" placeholder="123 456" required>
+                    <br><br>
+                    <div class="btns">
+                        <input type="reset" value="Clear fields" class="btn">
+                    </div>
+                </fieldset><br>
+
+            </form>
+
+            <!-- contact details form -->
+            <form class="form" id="contactform">
+
+                <fieldset class="fieldset" >
+                    <legend class="legend">Contact Details</legend>
+
+                    <br>
+                    <label for="firstName">* First Name:</label><br>
+                    <input type="text" id="firstName" name="firstName" size="30" placeholder="Harry" required>
+                    <br><br>
+                    <label for = "surname">* Surname: </label><br>
+                    <input type="text" id="surname" name="surname" size="30" placeholder="Potter" required>
+                    <br><br>
+                    <label for = "contactNo">* Contact number: </label><br>
+                    <input type="text" id="contactNo" name="contactNo" size="30" placeholder="012 3456 789" required>
+                    <br><br>
+                    <label for = "email">* Email: </label><br>
+                    <input type="text" id="email" name="email" size="30" placeholder="harrypotter@example.com" required>
+                    <br><br>
+
+                    <div class="btns">
+                        <input type="reset" value="Clear fields" class="btn">
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    <div class="btns"><button id="cancel-order">Canel Order</button><button id="place-order">Place Order</button></div>
+
+    <!-- popup box -->
+    <div class="popup-box">
+        <span class="close-btn">&#10006; </span>
+        <img src="images/done.gif" alt="done">
+        <h2>Your order has been placed</h2>
+    </div>
+
+    <p style="padding-left: 10px;">&copy; Life Below Water. All rights reserved.</p>
+    <!-- footer part -->
+    <footer>
+        <div class="footerLine1">
+          <h4>Life Below Water</h4>
+            <div class="media-icons">
+              <a href="https://web.whatsapp.com/#"><img class="medi" src="../images/whatsapp.png" alt="whatsapp"></a>
+              <a href="https://www.instagram.com/"><img class="medi" src="../images/instagram.png" alt="instagram"></a>
+              <a href="https://www.facebook.com"><img class="medi" src="../images/facebook.png" alt="facebook"></a>
+              <a href="https://www.youtube.com"><img class="medi" src="../images/youtube.png" alt="youtube"></a>
+              <a href="https://www.linkedin.com"><img class="medi" src="../images/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footerLine2">
+          <p style="padding-left: 10px;"><b>Created by : <a href="../editor_page/Kaveen-editor-page.html" class="editor">Kaveen Umesha</a></b></p>
+          <ul class="footer_list">
+            <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <script>
+        // close popup
+        document.querySelector(".close-btn").addEventListener("click", function() {
+            document.querySelector(".popup-box").style.display = "none";
+            document.getElementById("paymentform").submit();
+            document.getElementById("addressform").submit();
+            document.getElementById("contactform").submit();
+            window.location.href = 'shop.html';
+            document.getElementById("paymentform").reset();
+            document.getElementById("addressform").reset();
+            document.getElementById("contactform").reset();
+        });
+
+        // validate number
+        function validate_number(number) {
+            if (!isNaN(number)) {
+                return true; 
+            } else {
+                alert("Please enter a number for number required fields");
+                return false;
+            }
+        }
+
+        // validate email
+        function validate_email(email) {
+            const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(re.test(email)) {
+                return true;
+            }else {
+                alert("Please enter a valid email");
+                return false;
+            }
+        }
+
+        // validate form
+        function validateForm() {
+            const form = document.querySelector('.form');
+            let isValid = true;
+
+            const inputs = form.querySelectorAll('input[required], select[required]');
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.classList.add('invalid');
+                } else {
+                    input.classList.remove('invalid');
+                }
+            });
+
+            return isValid;
+        }
+
+
+        document.getElementById("place-order").addEventListener("click", function() {
+            if(validateForm()) {
+                var cardNumber = validate_number(document.getElementById("cardNumber").value);
+                var expYear = validate_number(document.getElementById("expYear").value);
+                var cvv = validate_number(document.getElementById("cvv").value);
+                var contactNo = validate_number(document.getElementById("contactNo").value);
+                var email = validate_email(document.getElementById("email").value);
+
+                if(cardNumber && expYear && cvv && contactNo && email) {
+                    document.querySelector(".popup-box").style.display = "block";
+                }
+            }else {
+                    alert("Please fill in all required fields");
+            }
+        });
+
+        document.getElementById("cancel-order").addEventListener("click", function() {
+            confirmation = confirm("Are you sure you want to cancel your order?");
+            if (confirmation) {
+                window.location.href = 'shop.html';
+                document.getElementById("paymentform").reset();
+                document.getElementById("addressform").reset();
+                document.getElementById("contactform").reset();
+            } 
+        });
+    </script>
+    </body>
+</html>

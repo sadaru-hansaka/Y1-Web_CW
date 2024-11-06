@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kaveen Umesha</title>
+      <!-- Navigation bar style sheet -->
+      <link rel="stylesheet" href="../style.css">
+      <link rel="stylesheet" href="editor.css">
+    </head>
+
+    <body>
+      <nav class="navigation">
+        <div class="logo-container">
+          <!-- link home page -->
+          <a href="../../Student-2/Home page/home-page.html">
+          <img class="logo" src="../images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="title-container">
+          <!-- menu icon -->
+          <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+          <h1 id="topic">Life Below Water</h1>
+            
+          <!-- navigation menu -->
+            <ul class="list" id="list">
+                <li id="homeNav"><a href="../../Student-2/Home page/home-page.html">Home</a></li>
+                <li id="galleryNav"><a href="../../Student-4/Gallery.html">Gallery</a></li>
+                <li id="shopNav"><a href="../shop/Shop.html">Shop</a></li>
+                <li id="siteNav"><a href="../../Student-4/Sitemap.html">Sitemap</a></li>
+                <li id="aboutUsNav"><a href="../../Student-3/About-us.html">About Us</a></li>
+                <li id="feedbackNav"><a href="../../Student-2/Feedback form/feedback-page.html">Feedback</a></li>
+            </ul>    
+        </div>
+
+        <!-- search bar -->
+        <form id="search-container" class="search-container">
+                <input type="text" placeholder="Search here..">
+                <button type="reset" onclick="reset_txt()" ><img  src="../images/search.png" alt="search_icon"></button>
+        </form>
+
+
+        <!-- user profile icon -->
+        <div class="profile">
+            <a href="../../Student-3/User-profile.html">
+            <img class="user" id="userIcon" src="../images/user.png" alt="User">
+            </a>
+        </div>
+      </nav>
+         
+        <!-- content -->
+        <div class="page">
+          <section class ="portfolio">
+            <div class="portfolio-text">
+                <h1>Welcome to the editors page</h1>
+            </div>
+            <div class="profile">
+                <br>
+                <img class="photo" src="images/kaveen.jpg" alt="kaveen">
+                <p> Name : Name </p>
+                <p> Role : Student 1</p>
+                <p>Following pages were created and edited by me !</p>
+            </div>
+            <br><br>
+            <div class="main-page">
+                <h2><u>Shop</u></h2>
+                <p>I have created shop page and the payment gateway page using HTML,CSS and javascript. As to sell products for fundraising for conservation of life below water.</p>
+                <p class="h-link"><a href="../shop/Shop.html">Link to the User Profile </a></p>
+            </div>
+            <br><br>
+
+            <div class="main-page">
+              <h2><u>Spash Screen</u></h2>
+              <p>In development of splash screen also I have used HTML,CSS and javascript. HTML and CSS for general look and javascript for smooth transitionings.</p>
+              <p class="h-link"><a href="../splash_screen/splash.html">Link to the About Us</a></p>
+            </div>
+            <br><br>
+
+            <div class="main-page">
+              <h2><u>Content Page</u></h2>
+              <p>I have created content page using HTML,CSS and javascript. In here I have discussed about my topic aquatic life forms.</p>
+              <p class="h-link"><a href="../content_page/Student1-content-page.html">Link to the Content page </a></p>
+            </div>
+          </section>
+        </div>
+
+        <p style="padding-left: 10px;">&copy; Life Below Water. All rights reserved.</p>
+        <!-- footer part -->
+        <footer>
+          <div class="footerLine1">
+            <h4>Life Below Water</h4>
+              <div class="media-icons">
+                <a href="https://web.whatsapp.com/#"><img class="medi" src="../images/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/"><img class="medi" src="../images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img class="medi" src="../images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com"><img class="medi" src="../images/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com"><img class="medi" src="../images/linkedin.png" alt="linkedin"></a>
+              </div>
+          </div>
+          <hr>
+          <div class="footerLine2">
+            <p style="padding-left: 10px;"><b>Created by : <a href="Kaveen-editor-page.html" class="editor">Kaveen Umesha</a></b></p>
+            <ul class="footer_list">
+              <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+              var menuList = document.getElementById("list");
+              menuList.classList.toggle("show");
+            }
+    
+            function reset_txt() {
+              document.getElementById("search-container").reset;
+            }
+            
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+.portfolio{
+    background-color: white;
+    padding:20px;
+    text-align:center;
+    justify-content:center;
+}
+ 
+.photo{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio-text{
+    color:#E5E4E9;
+    font-size:25px;
+}
+.profile{
+    background-color: #0D2237 ;
+    color:#E5E4E9;
+    padding:20px;
+    border-radius: 10px;
+}
+.h-link a{
+    background-color: #311a8b;
+    color: #E5E4E9;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 5px;
+}
+.h-link a:hover{
+    background-color: #ffffff;
+    color: black;
+    padding: 6px;
+    border-radius: 5px;
+ }
+.main-page{
+    background-color: #0D2237 ;
+    color:#E5E4E9;
+    padding:20px;
+    border-radius: 10px;
+}
