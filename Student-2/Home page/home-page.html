@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+      <link rel="stylesheet" href="nav_bar_styles.css">
+      <link rel="stylesheet" href="home-page-styles.css">
+    </head>
+
+    <body>
+      <nav class="navigation">
+        <div class="logo-container">
+          <a href="home-page.html">
+          <img class="logo" src="../images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="title-container">
+          <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+          <h1 id="topic">Life Below Water</h1>
+            
+            <ul class="list" id="list">
+                <li id="homeNav"><a href="home-page.html" class="active">Home</a></li>
+                <li id="galleryNav"><a href="../../Student-4/Gallery.html">Gallery</a></li>
+                <li id="shopNav"><a href="../../Student-1/shop/Shop.html">Shop</a></li>
+                <li id="siteNav"><a href="../../Student-4/Sitemap.html">Sitemap</a></li>
+                <li id="aboutUsNav"><a href="../../Student-3/About-us.html">About Us</a></li>
+                <li id="feedbackNav"><a href="../Feedback form/feedback-page.html">Feedback</a></li>
+            </ul>    
+        </div>
+
+        <form id="search-container" class="search-container">
+                <input type="text" placeholder="Search here..">
+                <button type="reset" onclick="reset_txt()" ><img  src="../images/search.png" alt="search"></button>
+        </form>
+
+
+        <div class="profile">
+            <a href="../../Student-3/User-profile.html">
+            <img class="user" id="userIcon" src="../images/user.png" alt="User">
+            </a>
+        </div>
+    </nav>
+         
+        <!-- Inside this div enter your content -->
+        <div class="page">
+          <div class="background">
+            <div class="sdg-text">
+                <div class="sdg_num">14</div><div class="life">LIFE BELOW<br>WATER</div> 
+                <h2 class="description">Conserve and sustainably use the oceans, seas and marine resources for sustainable development.</h2>
+            </div>
+          </div>
+          <h3 style="padding-left: 50px;">Related topics :</h3>
+          <div class="content_pages">
+          <!-- student 1 content -->
+          <div class="content">
+            <a href="../../Student-1/content_page/Student1-content-page.html">
+              <img src="../images/aquatic-life.jpg" alt="aquatic-life">
+            </a>
+          
+            <div class="details">
+              <p class="name">Aquatic Life</p>
+            </div>
+            </div>
+            <!-- student 2 -->
+            <div class="content">
+              <a href="../Additional content page/studen2-content-page.html">
+                <img src="../images/oceans_img.jpg" alt="Oceans & Seas">
+              </a>
+              <div class="details">
+                <p class="name">Oceans</p>
+              </div>
+            </div>
+            <!-- Student 3 -->
+            <div class="content">
+              <a href="../../Student-3/Student3-content-page.html">
+                <img src="../images/water_polution.jpg" alt="Water-polution">
+              </a>
+              <div class="details">
+                <p class="name">Water Polution</p>
+              </div>
+            </div>
+            <!-- Student 4 -->
+            <div class="content">
+              <a href="../../Student-4/Student4-content-page.html">
+                <img src="../images/corals.jpg" alt="Corals">
+              </a>
+              <div class="details">
+                <p class="name">Corals</p>
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <!-- news area -->
+          <div class="news-section">
+            <h2>News :</h2>
+            <!-- link united nation news page -->
+            <a href="https://sdgs.un.org/news" class="news-btn">See all news</a>
+          </div>
+          <div class="news-container">
+            <div class="arrow left-arrow"> &lsaquo;</div> 
+            <div class="news" id="news1">
+              <img class="newsimg" src="../images/news1.jpg" alt="news1">
+              <a href="https://sdgs.un.org/news/un-convene-global-experts-tokyo-4-6-march-assess-climate-action-targets-under-sustainable">
+                <h2>UN to Convene Global Experts in Tokyo on 4 - 6 March to Access Climate Action Targets under Sustainable Development Goals</h2>
+              </a>
+            </div>
+            <div class="news" id="news2">
+              <img class="newsimg" src="../images/news2.jpg" alt="news2">
+              <a href="https://www.un.org/en/desa/cop28-ends-call-%E2%80%98transition-away%E2%80%99-fossil-fuels-un%E2%80%99s-guterres-says-phaseout-inevitable">
+                <h2>COP28 ends with call to 'tarnsition away from fossil fuels; UN's Sutters says phaseout is inevitable</h2>
+              </a>
+            </div>
+            <div class="news" id="news3">
+              <img class="newsimg" src="../images/news3.png" alt="news3">
+              <a href="https://sdgs.un.org/blog/expert-group-prepare-report-analysing-climate-and-sdg-synergies-aiming-maximize-action-impact">
+                <h2>Expert Group to pRepare REport Analysing Climate and SDG Synergies, Aiming to Maximize Action Impact</h2>
+              </a>
+            </div>
+            <div class="arrow right-arrow">&rsaquo;</div>
+          </div>
+
+          <!-- mission and vision -->
+          <div class="mission">
+            <h2>MISSION</h2>
+            <p>Our goal is to raise awareness and encourage actions that protect and revitalize marine ecosystems, ensuring the sustainable use of oceans and marine resources. Through education, advocacy, and collaboration, we seek to motivate individuals, communities, and stakeholders globally to preserve marine biodiversity, address pollution, mitigate climate change impacts, and promote sustainable practices for the well-being of current and future generations.</p>
+            <hr>
+            <h2>VISION</h2>
+            <p>Our vision is to create a world where marine ecosystems thrive, where oceans and seas are teeming with life, and where coastal communities live in harmony with their aquatic environments. We envision a future where all individuals recognize the intrinsic value of our oceans and are committed to preserving and protecting them for generations to come. Through education, innovation, and collaboration, we strive to achieve sustainable management and conservation of marine resources, ensuring the health and vitality of 'Life Below Water' for the benefit of all life on Earth.</p>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+          <div class="footerLine1">
+            <h4>Life Below Water</h4>
+              <div class="media-icons">
+                <a href="https://web.whatsapp.com/#"><img class="medi" src="../images/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/"><img class="medi" src="../images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img class="medi" src="../images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com"><img class="medi" src="../images/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com"><img class="medi" src="../images/linkedin.png" alt="linkedin"></a>
+              </div>
+          </div>
+          <hr>
+          <div class="footerLine2">
+            <p style="padding-left: 10px; font-weight: bold;">Created by : <a href="../Editor's page/sadaru-editor-page.html" class="editor">Sadaru Hansaka</a></p>
+            <ul class="footer_list">
+              <!-- top of the page -->
+              <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <p style="padding-left: 10px;">&copy; 2024 Life Below Water. All rights reserved.</p>
+        </footer>
+
+        <script>
+            // from this function the menu icon displays in the responsive screen
+            function toggleMenu() {
+              var menuList = document.getElementById("list");
+              menuList.classList.toggle("show");
+            }
+            
+            // from this function asfter click search button it will reset the search bar
+            function reset_txt() {
+              document.getElementById("search-container").reset;
+            }
+            
+            // news js
+            const news1 = document.getElementById('news1');
+            const news2 = document.getElementById('news2');
+            const news3 = document.getElementById('news3');
+            const leftArrow = document.querySelector('.left-arrow');
+            const rightArrow = document.querySelector('.right-arrow');
+
+            // left arroe event listner
+            leftArrow.addEventListener('click', function() {
+              if (news1.classList.contains('active')) {
+                news1.classList.remove('active');
+                news3.classList.add('active');
+              } else if (news2.classList.contains('active')) {
+                news2.classList.remove('active');
+                news1.classList.add('active');
+              } else if (news3.classList.contains('active')) {
+                news3.classList.remove('active');
+                news2.classList.add('active');
+              }
+            });
+
+          //right arrow event listner
+            rightArrow.addEventListener('click', function() {
+              if (news1.classList.contains('active')) {
+                news1.classList.remove('active');
+                news2.classList.add('active');
+              } else if (news2.classList.contains('active')) {
+                news2.classList.remove('active');
+                news3.classList.add('active');
+              } else if (news3.classList.contains('active')) {
+                news3.classList.remove('active');
+                news1.classList.add('active');
+              }
+            });
+
+            // always display news1
+            news1.classList.add('active');
+        </script>
+
+    </body>
+</html>

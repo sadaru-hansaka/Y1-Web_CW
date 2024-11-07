@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+        <link rel="stylesheet" href="nav_bar_styles.css">
+        <link rel="stylesheet" href="feedback-style.css">
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <div class="logo-container">
+              <a href="../Home page/home-page.html">
+              <img class="logo" src="../images/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="title-container">
+              <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+              <h1 id="topic">Life Below Water</h1>
+                
+                <ul class="list" id="list">
+                    <li id="homeNav"><a href="../Home page/home-page.html">Home</a></li>
+                    <li id="galleryNav"><a href="../../Student-4/Gallery.html">Gallery</a></li>
+                    <li id="shopNav"><a href="../../Student-1/shop/Shop.html">Shop</a></li>
+                    <li id="siteNav"><a href="../../Student-4/Sitemap.html">Sitemap</a></li>
+                    <li id="aboutUsNav"><a href="../../Student-3/About-us.html">About Us</a></li>
+                    <li id="feedbackNav"><a href="feedback-page.html" class="active">Feedback</a></li>
+                </ul>    
+            </div>
+  
+            <form id="search-container" class="search-container">
+                    <input type="text" placeholder="Search here..">
+                    <button type="reset" onclick="reset_txt()" ><img  src="../images/search.png" alt="search"></button>
+            </form>
+  
+  
+            <div class="profile">
+                <a href="../../Student-3/User-profile.html">
+                <img class="user" id="userIcon" src="../images/user.png" alt="User">
+                </a>
+            </div>
+        </nav>
+         
+        <!-- Inside this div enter your content -->
+        <div class="page">
+            <div class="background-image">
+                <img src="../images/feedback_background.png" alt="Feedback Background">
+            </div>
+            <form class="feedback_form" id="feedback_form">
+                <fieldset class="fieldset1">
+                    <legend><img src="../images/feedback.png" alt="Feedback"></legend>
+                    <h3>Give us your valuable feedback</h3>
+                    
+                    <div class="inputs">
+                        <h5>Recuired fields *</h5>
+                        <!-- name -->
+                        <label>* Name :</label>
+                        <input type="text" class="name" id="name" placeholder="Enter your name" required><br>
+                        <!-- Email -->
+                        <label>* Email :</label> 
+                        <input type="email" class="email" id="email" placeholder="Enter your email" required><br><br>
+                        
+
+                        <!-- rating emojis -->
+                        <div class="rating">
+                            <label>Rate your user experience.</label><br><br>
+                            <div class="emoji" id="emoji4">😠</div>
+                            <div class="emoji" id="emoji5">😢</div>
+                            <div class="emoji" id="emoji1">😊</div>
+                            <div class="emoji" id="emoji3">😍</div>
+                        </div>
+
+                        <br>
+                        Did you completed your visiting task ?<br>     
+                        <label>
+                            <input type="radio" name="task1" value="yes"> 
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="task1" value="no">
+                            No
+                        </label><br><br>
+                        Was this website informative and easy to navigate through ?<br>     
+                        <label>
+                            <input type="radio" name="task2" value="yes">
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="task2" value="no">
+                            No
+                        </label><br><br>
+
+                        <label>Would you like to get new updates about the website or the products ?</label>
+                        <select name="updates" id="updates">
+                            <option value="yes">Yes - via Notification</option>
+                            <option value="yes">Yes - via Email</option>
+                            <option value="no">No</option>
+                        </select><br>   
+                        
+                        <!-- text area -->
+                        <br>
+                        <textarea class="textarea" rows="5" cols="70" placeholder="If you have any further feedback or queries we will gladly accept it."></textarea>
+                        
+                        <br><br>
+                        <!-- submit button -->
+                        <button class="Submit_button" id="submitButton" onclick="button_change()">Submit</button>
+                       
+                    </div>    
+
+                </fieldset>
+            </form>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="footerLine1">
+              <h4>Life Below Water</h4>
+                <div class="media-icons">
+                    <a href="https://web.whatsapp.com/#"><img class="medi" src="../images/whatsapp.png" alt="whatsapp"></a>
+                    <a href="https://www.instagram.com/"><img class="medi" src="../images/instagram.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com"><img class="medi" src="../images/facebook.png" alt="facebook"></a>
+                    <a href="https://www.youtube.com"><img class="medi" src="../images/youtube.png" alt="youtube"></a>
+                    <a href="https://www.linkedin.com"><img class="medi" src="../images/linkedin.png" alt="linkedin"></a>
+                </div>
+            </div>
+            <hr>
+            <div class="footerLine2">
+              <p style="padding-left: 10px; font-weight: bold;">Created by : <a href="../Editor's page/sadaru-editor-page.html" class="editor">Sadaru Hansaka</a></p>
+              <ul class="footer_list">
+                <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <p style="padding-left: 10px;">&copy; Life Below Water. All rights reserved.</p>
+          </footer>
+
+          <!-- Popup box -->
+        <div id="overlay" class="overlay">
+            <div class="popup-box">
+                <!-- X button -->
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <img src="images/done.gif" alt="done">
+                <h2>Thank you for your feedback</h2>
+            </div>
+        </div>
+
+        <script>
+            // controll menu icon
+            function toggleMenu() {
+              var menuList = document.getElementById("list");
+              menuList.classList.toggle("show");
+            }
+            
+            // reset search bar
+            function reset_txt() {
+              document.getElementById("search-container").reset;
+            }
+
+            // enlarge emojis
+            const emojis = document.querySelectorAll('.emoji');
+            function handleClick(event) {
+            const clickedEmoji = event.currentTarget;
+                emojis.forEach(emoji => {
+                    emoji.classList.remove('enlarged');
+                });
+                clickedEmoji.classList.add('enlarged');
+            }
+            emojis.forEach(emoji => {
+                emoji.addEventListener('click', handleClick);
+            });
+            
+            // submit button controls
+
+            function button_change(){
+            event.preventDefault();
+                let name = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (name.trim() != '' && emailPattern.test(email)) {
+                    document.getElementById('overlay').style.display = "block";
+                    emojis.forEach(emoji => {
+                        emoji.classList.remove('enlarged');
+                    });
+                } else {
+                    if (name.trim() === '') {
+                        document.getElementById('name').classList.add('error');
+                    }
+                    if (!emailPattern.test(email)) {
+                        document.getElementById('email').classList.add('error');
+                    }
+                    alert("Please fill in the required fields");
+                }
+            } 
+
+            function closePopup() {
+                document.getElementById("overlay").style.display = "none";
+                document.getElementById("feedback_form").reset(); 
+            }
+        </script>
+
+    </body>
+</html>

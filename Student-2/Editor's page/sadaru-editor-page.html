@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sadaru Hansaka</title>
+      <link rel="stylesheet" href="nav_bar_styles.css">
+      <link rel="stylesheet" href="editor.css">
+    </head>
+
+    <body>
+      <nav class="navigation">
+        <div class="logo-container">
+          <a href="../Home page/home-page.html">
+          <img class="logo" src="../images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="title-container">
+          <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+          <h1 id="topic">Life Below Water</h1>
+            
+            <ul class="list" id="list">
+                <li id="homeNav"><a href="../Home page/home-page.html">Home</a></li>
+                <li id="galleryNav"><a href="../../Student-4/Gallery.html">Gallery</a></li>
+                <li id="shopNav"><a href="../../Student-1/shop/Shop.html">Shop</a></li>
+                <li id="siteNav"><a href="../../Student-4/Sitemap.html">Sitemap</a></li>
+                <li id="aboutUsNav"><a href="../../Student-3/About-us.html">About Us</a></li>
+                <li id="feedbackNav"><a href="../Feedback form/feedback-page.html">Feedback</a></li>
+            </ul>    
+        </div>
+
+        <form id="search-container" class="search-container">
+                <input type="text" placeholder="Search here..">
+                <button type="reset" onclick="reset_txt()" ><img  src="../images/search.png" alt="search"></button>
+        </form>
+
+
+        <div class="profile">
+            <a href="../../Student-3/User-profile.html">
+            <img class="user" id="userIcon" src="../images/user.png" alt="User">
+            </a>
+        </div>
+    </nav>
+         
+        <!-- content -->
+        <div class="page">
+          <div class ="portfolio">
+            <div class="portfolio-text">
+                <h1>Welcome to the editors page</h1>
+            </div>
+            <div class="pt">
+                <br>
+                <img class="photo" src="../images/sandaru.jpg" alt="editor">
+                <p> Name : Sadaru Hansaka </p>
+                <p> Role : Student 2</p>
+                <p> The follow pages were created and edited by me !</p>
+            </div>
+            <br><br>
+            <!-- home page -->
+            <div class="main-page">
+                <h2><u>Home page</u></h2>
+                <p>I have created the home page using HTMl,CSS and Javascript.My home page incudes navigation bar, footer , related topics and news which are related to our topic Life Below Water.</p>
+                <p>From this web page I tried to give a rough idea about our topic. And I linked the 4 additional content pages to the home.I used Jaca script to handle my menu icon,search bar 
+                  and news section.</p>
+                <p class="h-link"><a href="../Home page/home-page.html">Link to the Home page </a></p>
+            </div>
+            <br><br>
+
+            <!-- feedback form -->
+            <div class="main-page">
+              <h2><u>Feedback Form</u></h2>
+              <p>I have created feedback form using HTMl,CSS and Javascript.</p>
+              <p>I used Javascript to validate the email and control rating emojis. And I added a pop up box to display a greating message.</p>
+              <p class="h-link"><a href="../Feedback form/feedback-page.html">Link to the Feedback form </a></p>
+            </div>
+            <br><br>
+
+            <!-- content page -->
+            <div class="main-page">
+              <h2><u>Additional page for Student 2</u></h2>
+              <p>I have created additional content page abou Oceans using HTMl and CSS.I included links at the top of the page to various sections within the text for easy navigation.</p>
+              <p>I linked my information source to the end of the page. From that link user can get more informations.</p>
+              <p class="h-link"><a href="../Additional content page/studen2-content-page.html">Link to the Content page </a></p>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="footerLine1">
+            <h4>Life Below Water</h4>
+              <div class="media-icons">
+                <a href="https://web.whatsapp.com/#"><img class="medi" src="../images/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/"><img class="medi" src="../images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img class="medi" src="../images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com"><img class="medi" src="../images/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com"><img class="medi" src="../images/linkedin.png" alt="linkedin"></a>
+              </div>
+          </div>
+          <hr>
+          <div class="footerLine2">
+            <p style="padding-left: 10px; font-weight: bold;">Created by : <a href="../Editor's page/sadaru-editor-page.html" class="editor">Sadaru Hansaka</a></p>
+            <ul class="footer_list">
+              <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <p style="padding-left: 10px;">&copy; 2024 Life Below Water. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+              var menuList = document.getElementById("list");
+              menuList.classList.toggle("show");
+            }
+    
+            function reset_txt() {
+              document.getElementById("search-container").reset;
+            }
+            
+        </script>
+
+    </body>
+</html>

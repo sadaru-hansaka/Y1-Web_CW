@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Content Page</title>
+      <link rel="stylesheet" href="nav_bar_styles.css">
+
+    <style>
+      p{
+        font-size: 20px;
+      }
+    </style>
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <div class="logo-container">
+              <a href="../Home page/home-page.html">
+              <img class="logo" src="../images/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="title-container">
+              <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+              <h1 id="topic">Life Below Water</h1>
+                
+                <ul class="list" id="list">
+                    <li id="homeNav"><a href="../Home page/home-page.html">Home</a></li>
+                    <li id="galleryNav"><a href="../../Student-4/Gallery.html">Gallery</a></li>
+                    <li id="shopNav"><a href="../../Student-1/shop/Shop.html">Shop</a></li>
+                    <li id="siteNav"><a href="../../Student-4/Sitemap.html">Sitemap</a></li>
+                    <li id="aboutUsNav"><a href="../../Student-3/About-us.html">About Us</a></li>
+                    <li id="feedbackNav"><a href="../Feedback form/feedback-page.html">Feedback</a></li>
+                </ul>    
+            </div>
+  
+            <form id="search-container" class="search-container">
+                    <input type="text" placeholder="Search here..">
+                    <button type="reset" onclick="reset_txt()" ><img  src="../images/search.png" alt="search"></button>
+            </form>
+  
+  
+            <div class="profile">
+                <a href="../../Student-3/User-profile.html">
+                <img class="user" id="userIcon" src="../images/user.png" alt="User">
+                </a>
+            </div>
+        </nav>
+         
+        <!-- Inside this div enter your content -->
+        <div class="page">
+          <h1 style="text-align: center; padding-top: 20px;">Oceans</h1>
+
+          <ul>
+            <li><a href="#1">Introduction to Oceans</a></li>
+            <li id="1"><a href="#2">Ocean Facts</a></li>
+            <li><a href="#3">Plants and animals</a></li>
+            <li><a href="#4">Climate</a></li>
+            <li><a href="#5">Ocean Consevation</a></li>
+          </ul>
+
+          <div style="text-align: justify; padding:0 20px 20px 20px;">
+            <!-- topic 1 -->
+              <h3>Introduction to Oceans</h3>
+                <p >Ocean covers approximately 70% of Earth's surface.These enormous saltwater bodies are 
+                  vital for maintaining marine life, controlling climate, and supplying essential supplies 
+                  to human populations.Additionally, oceans support a vast array of marine life, from microscopic 
+                  phytoplankton to massive whales, making them essential for biodiversity.</p>
+                  <div style="text-align: center;">
+                    <figure>
+                      <img  style="width: 350px; padding-right: 20px; " src="../images/oceans.png" alt="ocean image">
+                      <figcaption>Image Source : https://www.britannica.com/science/ocean</figcaption>
+                    </figure>
+                    <figure>
+                      <img id="2" style="height: 350px;" src="../images/worldmap.png" alt="worldmap">
+                      <figcaption>Image Source : https://www.britannica.com/science/ocean</figcaption>
+                    </figure>
+                  </div>
+              
+            <!-- topic 2 -->
+            <h3 id="3">Ocean Facts</h3>
+            <img style="width: 450px; height: 650PX; float: right; padding-left: 10PX;" src="../images/ocean2.jpg" alt="ocean2">
+            <p>The Pacific Ocean is the world's largest ocean.It Spreads at more than 63 million square 
+              miles. The deepest point in the ocean is the Mariana Trench, reaching depths of over 36,000 feet.
+            Oceans contain about 97% of earth's water, there are only 3% of water for consumation. In our planet
+          thre are five major oceans. They are Pacific, Atlantic, Indian, Southern and Arctic oceans.
+          Each ocean has their own identity like climate. </p>
+              <!--topic  3  -->
+            <h3 >Plants and animals</h3>
+            <p id="4">Many organisms live in oceans. Organisms that live in oceans can live in salt water. 
+              They are affected by sunlight, temperature, water pressure, and water movement. Different 
+              ocean organisms live near the surface, in shallow waters, and in deep waters. Small plant 
+              organisms that live near the surface and use sunlight to produce food are called 
+              phytoplankton. Almost all animals in the ocean depend directly or indirectly on these plants. 
+              In shallow water, you may find lobsters and crabs. In deeper water, marine animals of many 
+              different shapes and sizes swim through the ocean. These include many types of fish, such as 
+              tuna, swordfish and marine mammals like dolphins and whales. The skies above the open ocean 
+              are home to large sea birds, such as the albatross.</p>
+              
+              <!-- topic 4 -->
+              <h3>Climate</h3>
+              <p>The ocean plays a vital role in climate and weather. The sun’s heat causes water to 
+                evaporate, adding moisture to the air. The oceans provide most of this evaporated water. 
+                The water vapor condenses to form clouds, which release their moisture as rain or other 
+                kinds of precipitation. All life on Earth depends on this process, called the water cycle.</p>
+              <p>The atmosphere receives much of its heat from the ocean. As the sun warms the water, the 
+                ocean transfers heat to the atmosphere. In turn, the atmosphere distributes the heat around 
+                the globe. Because water absorbs and loses heat more slowly than land masses, the ocean helps 
+                balance global temperatures by absorbing heat in the summer and releasing it in the winter. 
+                Without the ocean to help regulate global temperatures, Earth’s climate would be bitterly 
+                cold.</p>
+
+                <!-- topic 5 -->
+              <h3  id="5">Ocean Conservation</h3>
+              <p>Human activity poses a multitude of risks to the oceans, including pollution, habitat 
+                degradation, overfishing, and climate change. Rising sea temperatures and ocean acidification, 
+                which can cause coral bleaching and ecosystem collapse, are particularly dangerous for coral 
+                reefs. In order to preserve marine biodiversity and guarantee the long-term health and 
+                sustainability of our seas, conservation activities are essential. In order to safeguard these 
+                priceless ecosystems for future generations, initiatives like marine protected areas, 
+                sustainable fishing methods, and lowering plastic pollution are crucial.</p>
+
+
+            <h3>For more information and documents on this topic,<a href="https://sustainabledevelopment.un.org/topics/oceanandseas">please visit this link.</a></h3> 
+          </div>      
+        </div>
+
+        <footer>
+          <div class="footerLine1">
+            <h4>Life Below Water</h4>
+              <div class="media-icons">
+                <a href="https://web.whatsapp.com/#"><img class="medi" src="../images/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/"><img class="medi" src="../images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img class="medi" src="../images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com"><img class="medi" src="../images/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com"><img class="medi" src="../images/linkedin.png" alt="linkedin"></a>
+              </div>
+          </div>
+          <hr>
+          <div class="footerLine2">
+            <p style="padding-left: 10px; font-weight: bold;">Created by : <a href="../Editor's page/sadaru-editor-page.html" class="editor">Sadaru Hansaka</a></p>
+            <ul class="footer_list">
+              <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <p style="padding-left: 10px; font-size: medium;">&copy; Life Below Water. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+              var menuList = document.getElementById("list");
+              menuList.classList.toggle("show");
+            }
+    
+            function reset_txt() {
+              document.getElementById("search-container").reset;
+            }
+            
+        </script>
+
+    </body>
+</html>
