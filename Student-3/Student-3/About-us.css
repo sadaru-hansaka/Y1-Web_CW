@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+  }  
+.page{
+    margin-bottom: 190px;
+    background-color: #9CAFAA;
+}
+ 
+    
+    /* Style for the thumbnail container */
+    .thumbnail-container {
+        display: inline-block;
+        margin: 10px;
+        position: relative;
+        width: 200px;
+        padding-right: 20px;
+        
+    }
+
+    /* Style for the thumbnail image */
+    .thumbnail-image {
+        width: 200px;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    /* Style for the expanded details box */
+    .details-box {
+        position: absolute;
+        top: 220px;
+        left: 0;
+        width: 200px;
+        border-radius: 15px;
+        background-color: #100148;
+        border: 1px solid #ddd;
+        padding: 10px;
+        display: none;
+        color: #ddd;
+    }
+
+    .thumbnail-container:hover .thumbnail-image {
+        transform: scale(1.2);
+    }
+
+    .thumbnail-container:hover .details-box {
+        display: block;
+    }

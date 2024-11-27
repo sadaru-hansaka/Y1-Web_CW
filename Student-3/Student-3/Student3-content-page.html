@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Content Page</title>
+      <!-- Navigation bar style sheet -->
+      <link rel="stylesheet" href="nav_bar_styles.css">
+      <link rel="stylesheet" href="content.css">
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <div class="logo-container">
+              <!-- link home page -->
+              <a href="../Student-2/Home page/home-page.html">
+              <img class="logo" src="images/logo.png">
+              </a>
+            </div>
+            <div class="title-container">
+              <!-- menu icon -->
+              <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+              <h1 id="topic">Life Below Water</h1>
+                
+              <!-- navigation menu -->
+                <ul class="list" id="list">
+                    <li id="homeNav"><a href="../Student-2/Home page/home-page.html">Home</a></li>
+                    <li id="galleryNav"><a href="../Student-4/Gallery.html">Gallery</a></li>
+                    <li id="shopNav"><a href="../Student-1/shop/Shop.html">Shop</a></li>
+                    <li id="siteNav"><a href="../Student-4/Sitemap.html">Sitemap</a></li>
+                    <li id="aboutUsNav"><a href="About-us.html" class="active">About Us</a></li>
+                    <li id="feedbackNav"><a href="../Student-2/Feedback form/feedback-page.html">Feedback</a></li>
+                </ul>    
+            </div>
+    
+            <!-- search bar -->
+            <form id="search-container" class="search-container">
+                    <input type="text" placeholder="Search here..">
+                    <button type="reset" onclick="reset_txt()" ><img  src="images/search.png"></button>
+            </form>
+    
+    
+            <!-- user profile icon -->
+            <div class="profile">
+                <a href="User-profile.html">
+                <img class="user" id="userIcon" src="images/user.png" alt="User">
+                </a>
+            </div>
+        </nav>
+        <!-- Inside this div enter your content -->
+        <div class="page">
+            <h1>Marine Pollution</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#causes">Causes</a></li>
+                <li><a href="#effects">Effects</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>Marine pollution refers to the contamination of the marine environment with harmful or potentially harmful substances. This can include pollutants such as plastic debris, oil spills, chemicals, and various forms of waste.</p>
+            </section>
+            <section id="causes">
+                <h2>Causes</h2>
+                <p>There are several causes of marine pollution, including:</p>
+                <ul>
+                    <li><strong>Plastic waste</strong></li>
+                    <ul>
+                        <li>Microplastics: These are tiny plastic particles less than 5 millimeters in size, often originating from the breakdown of larger plastic items or microbeads used in personal care products.
+                            Single-Use Plastics: Items like plastic bags, bottles, straws, and packaging contribute significantly to marine pollution due to their widespread use and improper disposal.
+                            Ghost Fishing Gear: Lost or abandoned fishing gear, such as nets and lines, continues to trap marine life and degrade marine habitats.
+                        </li>
+                    </ul>
+                    <li><strong>Oil spills</strong></li>
+                    <ul>
+                        <li>
+                            Accidental Spills: Major oil spills from tanker accidents or offshore drilling operations can release large volumes of oil into the marine environment, leading to widespread contamination.
+                            Chronic Oil Pollution: Continuous small-scale oil leaks from ships, offshore rigs, and other sources also contribute to marine pollution over time.
+                        </li>
+                    </ul>
+                    <li><strong>Industrial runoff</strong></li>
+                    <ul>
+                        <li>
+                            Chemical Discharges: Industries often discharge pollutants such as heavy metals, solvents, and acids into nearby water bodies, leading to contamination of marine ecosystems.
+                            Thermal Pollution: Industrial activities like power generation can release heated water into water bodies, disrupting marine ecosystems and affecting marine life.
+                        </li>
+                    </ul>
+                    <li><strong>Chemical pollution</strong></li>
+                    <ul>
+                        <li>
+                            Pesticides and Herbicides: Agricultural runoff carries pesticides and herbicides into rivers and eventually into the ocean, impacting marine life and ecosystems.
+                            Heavy Metals: Industrial activities and urban runoff introduce heavy metals like mercury, lead, and cadmium into marine environments, posing serious health risks to marine organisms.
+                        </li>
+                    </ul>
+                    <li><strong>Excessive nutrient runoff from agriculture</strong></li>
+                    <ul>
+                        <li>
+                            Fertilizer Runoff: Excessive use of fertilizers in agriculture leads to nutrient runoff into water bodies, causing eutrophication—a process where excessive nutrients stimulate algae growth, leading to oxygen depletion and harmful algal blooms.
+                        </li>
+                    </ul>
+                </ul>
+            </section>
+            <section id="effects">
+                <h2>Effects</h2>
+                <p>Marine pollution can have devastating effects on marine ecosystems and wildlife. Some of the effects include:</p>
+                <ul>
+                    <li><strong>Damage to coral reefs and other marine habitats</strong></li>
+                    <ul>
+                        <li>
+                            Pollution can smother coral reefs and disrupt delicate marine habitats like mangroves and seagrass beds, leading to habitat loss and degradation.
+                        </li>
+                    </ul>
+                    <li><strong>Loss of biodiversity</strong></li>
+                    <ul>
+                        <li>
+                            Pollution affects the abundance and diversity of marine species, leading to declines in populations and loss of biodiversity.
+                        </li>
+                    </ul>
+                    <li><strong>Health problems for marine animals</strong></li>
+                    <ul>
+                        <li>
+                            Ingestion of plastic debris and contaminated prey can lead to physical harm, digestive blockages, and toxicological effects in marine animals.
+                        </li>
+                    </ul>
+                    <li><strong>Contamination of seafood</strong></li>
+                    <ul>
+                        <li>
+                            Pollutants like heavy metals and persistent organic pollutants bioaccumulate in the tissues of marine organisms, posing risks to human health through the consumption of contaminated seafood.
+                        </li>
+                    </ul>
+                    <li><strong>Impact on tourism and recreation</strong></li>
+                    <ul>
+                        <li>
+                            Pollution degrades coastal environments, impacting tourism and recreational activities such as swimming, diving, and beachcombing, thus affecting local economies.
+                        </li>
+                    </ul>
+                </ul>
+            </section>
+            <section id="solutions">
+                <h2>Solutions</h2>
+                <p>Addressing marine pollution requires both individual and collective efforts. Some solutions include:</p>
+                <ul>
+                    <li><strong>Reducing plastic use</strong></li>
+                    <ul>
+                        <li>
+                            Promoting alternatives to single-use plastics, implementing plastic bans, and encouraging recycling and proper waste management practices.
+                        </li>
+                    </ul>
+                    <li><strong>Proper waste disposal and recycling</strong></li>
+                    <ul>
+                        <li>
+                            Implementing effective waste collection and recycling programs, including community clean-up efforts and incentivizing recycling initiatives.
+                        </li>
+                    </ul>
+                    <li><strong>Regulations and enforcement to prevent pollution</strong></li>
+                    <ul>
+                        <li>
+                        Enacting and enforcing strict regulations on industrial discharges, oil spills, and waste management practices to prevent pollution at its source.
+                        </li>
+                    </ul>
+                    <li><strong>Investment in clean technologies</strong></li>
+                    <ul>
+                        <li>
+                            Supporting research and development of clean technologies such as wastewater treatment systems, biodegradable plastics, and renewable energy sources to mitigate pollution.
+                        </li>
+                    </ul>
+                    <li><strong>Education and awareness campaigns</strong></li>
+                    <ul>
+                        <li>
+                            Educating the public, policymakers, and industries about the impacts of marine pollution through awareness campaigns, environmental education programs, and community engagement initiatives.  
+                        </li>
+                    </ul>
+                </ul>
+            </section>
+            <img src="images/ocean-bottle.jpg" alt="ocean-bottle" class="ocean-bottle">
+        </main>
+
+        <p>For further details, visit <a href="https://education.nationalgeographic.org/resource/marine-pollution/">National Geographic</a></p>
+
+        </div>
+
+        <!-- footer part -->
+        <footer>
+          <div class="footerLine1">
+            <h4>Life Below Water</h4>
+              <div class="media-icons">
+                <a href="https://web.whatsapp.com/#"><img class="medi" src="images/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/"><img class="medi" src="images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img class="medi" src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com"><img class="medi" src="images/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com"><img class="medi" src="images/linkedin.png" alt="linkedin"></a>
+              </div>
+          </div>
+          <hr>
+          <div class="footerLine2">
+            <b><p style="padding-left: 10px;">Created by : <a href="Minindu-editor-page.html" class="editor">Minindu Gimshan</a></p></b>
+            <ul class="footer_list">
+              <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <p style="padding-left: 10px;">&copy; Life Below Water. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+              var menuList = document.getElementById("list");
+              menuList.classList.toggle("show");
+            }
+    
+            function reset_txt() {
+              document.getElementById("search-container").reset;
+            }
+            
+        </script>
+
+    </body>
+</html>

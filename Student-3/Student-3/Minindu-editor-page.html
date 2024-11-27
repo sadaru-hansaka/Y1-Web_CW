@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Minindu Gimshan</title>
+      <!-- Navigation bar style sheet -->
+      <link rel="stylesheet" href="nav_bar_styles.css">
+      <link rel="stylesheet" href="editor.css">
+    </head>
+
+    <body>
+      <nav class="navigation">
+        <div class="logo-container">
+          <!-- link home page -->
+          <a href="../Student-2/Home page/home-page.html">
+          <img class="logo" src="images/logo.png">
+          </a>
+        </div>
+        <div class="title-container">
+          <!-- menu icon -->
+          <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+          <h1 id="topic">Life Below Water</h1>
+            
+          <!-- navigation menu -->
+            <ul class="list" id="list">
+                <li id="homeNav"><a href="../Student-2/Home page/home-page.html">Home</a></li>
+                <li id="galleryNav"><a href="../Student-4/Gallery.html">Gallery</a></li>
+                <li id="shopNav"><a href="../Student-1/shop/Shop.html">Shop</a></li>
+                <li id="siteNav"><a href="../Student-4/Sitemap.html">Sitemap</a></li>
+                <li id="aboutUsNav"><a href="About-us.html" class="active">About Us</a></li>
+                <li id="feedbackNav"><a href="../Student-2/Feedback form/feedback-page.html">Feedback</a></li>
+            </ul>    
+        </div>
+
+        <!-- search bar -->
+        <form id="search-container" class="search-container">
+                <input type="text" placeholder="Search here..">
+                <button type="reset" onclick="reset_txt()" ><img  src="images/search.png"></button>
+        </form>
+
+
+        <!-- user profile icon -->
+        <div class="profile">
+            <a href="User-profile.html">
+            <img class="user" id="userIcon" src="images/user.png" alt="User">
+            </a>
+        </div>
+    </nav>
+         
+        <!-- content -->
+        <div class="page">
+          <section class ="portfolio">
+            <div class="portfolio-text">
+                <h1>Welcome to the editors page</h1>
+            </div>
+            <div class="pt">
+                <br>
+                <img class="photo" src="images/Minindu.jpg">
+                <p> Name : Name </p>
+                <p> Role : Student 3</p>
+                <p> The pages that follow were created and edited by me !</p>
+            </div>
+            <br><br>
+            <div class="main-page">
+                <p><h2><u>User Profile</u></h2></p>
+                <p>Create the user profile using HTML, CSS, and Javascript. The user profile includes 3 categories: Personal Information, Interests and Experience, and Environmental Awareness and Engagement. From this webpage, users can build a profile related to Life Below Water with 12 questions.</p>
+                <p class="h-link"><a href="User-profile.html">Link to the User Profile </a></p>
+            </div>
+            <br><br>
+
+            <div class="main-page">
+              <p><h2><u>About Us</u></h2></p>
+              <p>Created the About Us using, Html and CSS.Included team members details and their tasks.</p>
+              <p class="h-link"><a href="About-us.html">Link to the About Us</a></p>
+            </div>
+            <br><br>
+
+            <div class="main-page">
+              <p><h2><u>Additional page for Student 3</u></h2></p>
+              <p>Created additional content page about Marine Pollution using HTML and CSS.Linked Information source to the end of the page.From that link user can get more information.</p>
+              <p class="h-link"><a href="Student3-content-page.html">Link to the Content page </a></p>
+            </div>
+          </section>
+        </div>
+
+        <!-- footer part -->
+        <footer>
+          <div class="footerLine1">
+            <h4>Life Below Water</h4>
+              <div class="media-icons">
+                <a href="https://web.whatsapp.com/#"><img class="medi" src="images/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/"><img class="medi" src="images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img class="medi" src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com"><img class="medi" src="images/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com"><img class="medi" src="images/linkedin.png" alt="linkedin"></a>
+              </div>
+          </div>
+          <hr>
+          <div class="footerLine2">
+            <b><p style="padding-left: 10px;">Created by : <a href="Minindu-editor-page.html" class="editor">Minindu Gimshan</a></p></b>
+            <ul class="footer_list">
+              <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <p style="padding-left: 10px;">&copy; Life Below Water. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+              var menuList = document.getElementById("list");
+              menuList.classList.toggle("show");
+            }
+    
+            function reset_txt() {
+              document.getElementById("search-container").reset;
+            }
+            
+        </script>
+
+    </body>
+</html>

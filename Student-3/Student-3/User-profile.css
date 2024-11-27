@@ -1,0 +1,106 @@
+/* 
+* {
+    box-sizing: border-box;
+  } */
+  
+  
+  body {
+    background-color: #b4b5ba;
+  }
+  
+  .Form,.Form1,.Form2{
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: darkslateblue;  
+  }
+  
+  h2{
+    color: #160250;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  button {
+    background-color: #160250;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn , #prevBtn1 , #prevBtn2 , #prevBtn3 {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #5508f0;
+  }
+  
+  .progress-bar {
+    width: 70%;
+    height: 15px;
+    background-color: #f0f0f0;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    width: 0%;
+    max-height: 15px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height:15px;
+    color: rgb(20, 16, 16);
+    border-radius: 10px;
+}

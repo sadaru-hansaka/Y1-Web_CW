@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>User Profile</title>
+      <!-- Navigation bar style sheet -->
+      <link rel="stylesheet" href="nav_bar_styles.css">
+      <link rel="stylesheet" href="User-profile.css">
+    </head>
+
+    <body>
+        <nav class="navigation">
+        <div class="logo-container">
+          <!-- link home page -->
+          <a href="../Student-2/Home page/home-page.html">
+          <img class="logo" src="images/logo.png">
+          </a>
+        </div>
+        <div class="title-container">
+          <!-- menu icon -->
+          <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+          <h1 id="topic">Life Below Water</h1>
+            
+          <!-- navigation menu -->
+            <ul class="list" id="list">
+                <li id="homeNav"><a href="../Student-2/Home page/home-page.html">Home</a></li>
+                <li id="galleryNav"><a href="../Student-4/Gallery.html">Gallery</a></li>
+                <li id="shopNav"><a href="../Student-1/shop/Shop.html">Shop</a></li>
+                <li id="siteNav"><a href="../Student-4/Sitemap.html">Sitemap</a></li>
+                <li id="aboutUsNav"><a href="About-us.html">About Us</a></li>
+                <li id="feedbackNav"><a href="../Student-2/Feedback form/feedback-page.html">Feedback</a></li>
+            </ul>    
+        </div>
+
+        <!-- search bar -->
+        <form id="search-container" class="search-container">
+                <input type="text" placeholder="Search here..">
+                <button type="reset" onclick="reset_txt()" ><img  src="images/search.png"></button>
+        </form>
+
+
+        <!-- user profile icon -->
+        <div class="profile">
+            <a href="User-profile.html">
+            <img class="user" id="userIcon" src="images/user.png" alt="User">
+            </a>
+        </div>
+    </nav>
+         
+        <!-- Inside this div enter your content -->
+        <div class="page">
+          <div class="progress-bar">
+            <div class="progress" id="progress">0%</div>
+        </div>
+      
+      <div id="Form" class="Form">
+        <h1>Personal Information:</h1>
+        <div class="tab">Name:
+          <p><input oninput="this.className = ''" name="fname" type="text"></p>
+        </div>
+        <div class="tab">Birthday:
+          <p><input  oninput="this.className = ''" name="Birthday" type="date" class="skip" ></p>
+        </div>
+        <div class="tab">Country:
+          <p><input  oninput="this.className = ''" name="country" type="text"class="skip"></p>
+        </div>
+        <div class="tab">Field of study:
+          <p><input type="text" oninput="this.className = ''" name="Field" class="skip"></p>
+        </div>
+        <div class="tab">Email:
+          <p><input oninput="this.className = ''" name="Email" type="email" class="skip" ></p>  
+        </div>
+      
+      
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1, 'Form')">Previous</button>
+            <button type="button" id="skipBtn" onclick="skipQuestion()">Skip</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1, 'Form')">Next</button>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </div>
+      
+      <div id="Form1" class="Form1" style="display:none;">
+          <h1>Interests and Experience:</h1>
+          <!-- One "tab" for each step in the form: -->
+          <div class="tab">Interest in Marine Life:
+            <p><input type="text" oninput="this.className = ''" name="Marine Life" class="skip"></p>
+          </div>
+          <div class="tab">Favorite Marine Species:
+            <p><input type="text" oninput="this.className = ''" name="Marine Species" class="skip"></p>
+          </div>
+          <div class="tab">Experience with Diving or Snorkeling:
+            <p><input type="text" oninput="this.className = ''" name="Experience" class="skip"></p>
+          </div>
+          <div class="tab">Favorite Dive Locations:
+            <p><input type="text" oninput="this.className = ''" name="Dive Locations" class="skip"></p>
+          </div>
+      
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn1" onclick="nextPrev(-1, 'Form1')">Previous</button>
+              <button type="button" id="skipBtn1" onclick="skipQuestion()">Skip</button>
+              <button type="button" id="nextBtn1" onclick="nextPrev(1, 'Form1')">Next</button>
+            </div>
+          </div>
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+      </div>
+      
+      <div id="Form2" class="Form2" style="display:none;">
+          <h1>Environmental Awareness and Engagement:</h1>
+      
+        <div class="tab">Environmental Concerns:
+          <p><input type="text" oninput="this.className = ''" name="Environmental Concerns" class="skip"></p>
+        </div>
+        <div class="tab">Interest in Conservation Efforts:
+          <p><input type="text" oninput="this.className = ''" name="Conservation Efforts" class="skip"></p>
+        </div>
+      
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn2" onclick="nextPrev(-1, 'Form2')">Previous</button>
+            <button type="button" id="skipBtn2" onclick="skipQuestion()">Skip</button>
+            <button type="button" id="nextBtn2" onclick="nextPrev(1, 'Form2')">Next</button>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </div>
+      
+      <div id="summary" style="display: none;">
+        <h2>Profile:</h2>
+        <div id="summaryContent"></div>
+      </div>
+      <script src="User-profile.js"></script>
+        </div>
+
+        <!-- footer part -->
+        <footer>
+          <div class="footerLine1">
+            <h4>Life Below Water</h4>
+              <div class="media-icons">
+                <a href="https://web.whatsapp.com/#"><img class="medi" src="images/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/"><img class="medi" src="images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img class="medi" src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com"><img class="medi" src="images/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com"><img class="medi" src="images/linkedin.png" alt="linkedin"></a>
+              </div>
+          </div>
+          <hr>
+          <div class="footerLine2">
+            <b><p style="padding-left: 10px;">Created by : <a href="Minindu-editor-page.html" class="editor">Minindu Gimshan</a></p></b>
+            <ul class="footer_list">
+              <li><a href="#top" id="back-to-top-link">Back to Top</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <p style="padding-left: 10px;">&copy; Life Below Water. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+              var menuList = document.getElementById("list");
+              menuList.classList.toggle("show");
+            }
+    
+            function reset_txt() {
+              document.getElementById("search-container").reset;
+            }
+            
+        </script>
+
+    </body>
+</html>
